@@ -1,0 +1,6 @@
+Library: blossom.cpp implements separation algorithm for
+	- 2-matching inequalities
+	- edge cover inequalities
+
+The main program: minwpc.cpp 
+

@@ -1,0 +1,37 @@
+
+- gen2-EG.py:		Gerador de grafos aleatórios segundo o modelos de Erdos-Renyi.
+					Parâmetros:
+					-	NumInst:	Numero de instâncias a ser gerado
+					-	NumVert: 	Numero de vertices do grafo
+					-	Prob:		Um inteiro entre 0 e 100 que representa a 
+									probabilidade de uma aresta de existir no grafo.  
+
+- gen2-regular.py:	Gerador de grafos regulares aleatórios.
+					Parâmetros:
+					-	NumInst:	Numero de instâncias a ser gerado
+					-	NumVert:	Numero de vertices do grafo
+					-	Deg:		Grau dos vertices do grafo
+
+(*) As instâncias geradas são salva na pasta ./instancias/(NumInst)-P(Prob) ( resp. ./instancias/(NumInst)-R(Deg) )
+	Caso essa pasta não existir, o programa cria a pasta correspondente.
+
+- mult-gen-EG.sh:	Gerador de conjunto de testes que usa o gerador gen2-EG.py.
+					Parâmetros:
+					-	MinVert:	Numero de vertices do primeiro conjunto de instâncias
+					-	MaxVert:	Numero de vertices do último conjunto de instâncias
+					-	StepV:		Differença do numero de vertices entre conjuntos de instâncias consecutivos
+					-	MinP:		Probabilidade do 1o. conjunto de instâncias (fixado o numero de vertices)
+					- 	MaxP:		Probabilidade do último conjunto de instâncias (fixado o numero de vertices)
+					-	StepP:		Diferença entre valores consecutivos de probabilidade (fixado o numero de vertices)
+
+- mult-gen-reg.sh:	Gerador de conjunto de testes que usa o gerador gen2-regular.py.
+					Parâmetros:
+					-	MinVert:	Numero de vertices do primeiro conjunto de instâncias
+					-	MaxVert:	Numero de vertices do último conjunto de instâncias
+					-	StepV:		Differença do numero de vertices entre conjuntos de instâncias consecutivos
+					-	MinK:		Grau do primeiro conjunto de testes (fixado o numero de vertices)
+					- 	MaxK:		Grau do último conjunto de testes (fixado o numero de vertices)
+					-	StepK:		Diferença entre valores consecutivos de grau (fixado o numero de vertices)
+
+
+

@@ -1,0 +1,77 @@
+Optimizamos
+Transforming 0 5
+Adding 0 5
+Transforming 0 4
+Adding 0 4
+Transforming 1 3
+Adding 1 3
+Transforming 3 6
+Adding 3 6
+Transforming 4 5
+Adding 4 5
+Transforming 14 9
+Adding 7 2
+Transforming 15 6
+Adding 8 6
+Transforming 1 9
+Adding 1 2
+MATRIX C:
+0 4 1
+0 5 1
+1 2 1
+1 3 1
+2 7 1
+3 6 1
+4 5 1
+6 8 1
+S = 1 2 3 6 7 8
+Edges with possitive value
+0 5
+0 4
+1 3
+3 6
+4 5
+14 9
+15 6
+1 9
+Desigualdade da separacion
+adicionado
+Optimizamos
+Transforming 0 5
+Adding 0 5
+Transforming 1 3
+Adding 1 3
+Transforming 3 6
+Adding 3 6
+Transforming 14 9
+Adding 7 2
+Transforming 14 11
+Adding 7 4
+Transforming 15 0
+Adding 8 0
+Transforming 15 6
+Adding 8 6
+Transforming 1 9
+Adding 1 2
+Transforming 11 5
+Adding 4 5
+MATRIX C:
+0 5 1
+0 8 1
+1 2 1
+1 3 1
+2 7 1
+3 6 1
+4 5 1
+4 7 1
+6 8 1
+2
+0 5
+1 3
+3 6
+14 9
+14 11
+15 0
+15 6
+1 9
+11 5

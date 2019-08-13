@@ -1,0 +1,12 @@
+Formato dos arquivos solução (caso inteiro):
+
+- 	1a. linha: valor ótimo obtivo pelo solver (não-negativo). Caso o valor 
+	seja negativo, significa um erro (-1 para instância não viável, -2 e -3 
+	para erros não determinados).
+
+-	Caso exista solução, as proximas linhas contêm 2 inteiros cada, 
+	que representam uma aresta na solução ótima enntrada. O fim da 
+	descrição da solução é dado por uma linha contendo dois -1's.
+
+-	O arquivo termina com uma linha contendo o tempo de execução do 
+	solver.

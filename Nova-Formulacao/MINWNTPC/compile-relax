@@ -1,0 +1,1 @@
+g++ -m64 -g -o main main.cpp blossom.o -I. -L/Library/gurobi652/mac64/lib/ -lgurobi_c++ -lgurobi65 -lm 

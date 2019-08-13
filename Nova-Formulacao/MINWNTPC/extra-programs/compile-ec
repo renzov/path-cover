@@ -1,0 +1,1 @@
+g++ -m64 -g -o minwpc-ec minwpc-ec.cpp blossom2.o -I. -L/Library/gurobi652/mac64/lib/ -lgurobi_c++ -lgurobi65 -lm 
