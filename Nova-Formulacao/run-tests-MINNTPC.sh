@@ -1,5 +1,5 @@
 #!/bin/bash
-BASE_DIR=~/Dropbox/RenzoYoshiko-Doutorado/Implementacao/Nova-Formulacao/MINNTPC/inteira
+BASE_DIR=~/path-cover/Nova-Formulacao/MINNTPC/inteira
 # Change to the directory containing the testdata
 if [ ! -d "$BASE_DIR/output" ]; then
 	mkdir "$BASE_DIR/output"
