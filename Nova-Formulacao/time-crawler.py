@@ -2,7 +2,7 @@ import csv
 from os import listdir
 from os.path import isdir, join, exists, expanduser
 
-OUTPUT_DIR = expanduser("~") + "/Dropbox/RenzoYoshiko-Doutorado/Implementacao/Nova-Formulacao/MINNTPC/inteira/output"
+OUTPUT_DIR = expanduser("~") + "/path-cover/Nova-Formulacao/MINPC/inteira/output"
 
 
 def get_time( filename ):
@@ -32,7 +32,7 @@ for f in filenames:
 	headers.append(f)
 
 # Create the csv file
-csvfile = open('time.csv', 'w')
+csvfile = open('time-MINPC.csv', 'w')
 writer = csv.writer( csvfile )
 writer.writerow(headers)
 
