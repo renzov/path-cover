@@ -9,7 +9,6 @@ if len(sys.argv) != 3:
 	exit(1)
 
 try:
-	print (len(sys.argv))
 	numInst = int(sys.argv[1])
 	numVert = int(sys.argv[2])
 except: 
@@ -28,7 +27,7 @@ except OSError as e:
 try: 
 	for i in range(numInst):
 		# Generate degree sequence
-		m = random.randInt(1, numVert - 1)
+		m = rnd.randint(1, numVert - 1)
 		filename = directory + 'in' + str(i)
 		f = open(filename, 'w')
 		G = nx.barabasi_albert_graph(numVert, m)
