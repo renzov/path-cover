@@ -4,18 +4,20 @@ import math
 import os
 import sys
 
-if len(sys.argv) != 3:
-	print ("Usage: python gen-BA.py numInst numVert")
+if len(sys.argv) != 5:
+	print ("Usage: python gen-BA.py numInst numVert low high")
 	exit(1)
 
 try:
 	numInst = int(sys.argv[1])
 	numVert = int(sys.argv[2])
+	low = int(sys.argv[3])
+	high = int(sys.argv[4])
 except: 
 	print ("Error in parsing arguments")
 	exit(2)
 
-directory = './instancias/B-' + str(numVert) + '/'
+directory = './instancias/B-' + str(numVert) +  '-'  + str(low) + '/'
 
 try: 
 	if not os.path.exists(directory):
@@ -27,7 +29,7 @@ except OSError as e:
 try: 
 	for i in range(numInst):
 		# Generate degree sequence
-		m = rnd.randint(1, numVert - 1)
+		m = rnd.randint(low, high)
 		filename = directory + 'in' + str(i)
 		f = open(filename, 'w')
 		G = nx.barabasi_albert_graph(numVert, m)

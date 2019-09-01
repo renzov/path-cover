@@ -32,7 +32,7 @@ for file in *; do
 			fi
 			# Check if we have processed 10 instances
 			if [ $cnt -ge 10 ]; then 
-				sleep 30s
+				# sleep 30s
 				let cnt=0
 			fi
 		done
